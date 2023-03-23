@@ -17,14 +17,12 @@ vim.g.maplocalleader = ' '
 
 nmap('<leader>e', ':set fileencoding=windows-1252<CR>')
 
--- Copy, Paste and Delete line
+-- Copy, Paste and Cut line
 
---vmap('<c-d>', 'dd')
---vmap('<c-c>', 'yy')
---vmap('<c-v>', 'P')
+vmap('<C-c>', '"+ygvy')
+nmap('<C-v>', '"+gP')
 
-vmap('<leader>y', '"*y')
-nmap('<leader>p', '"*p')
+vmap('<C-x>', '"+ygvd')
 
 -- Window Split
 
@@ -120,3 +118,8 @@ nmap('<A-.>', ':BufferNext<CR>')
 -- Close Buffer 
 
 nmap('<A-q>', ':BufferClose<CR>')
+
+
+------ File Explorer ------
+
+nmap('<leader>o', ':NvimTreeToggle<CR>')

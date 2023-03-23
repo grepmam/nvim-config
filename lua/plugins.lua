@@ -26,6 +26,10 @@ require('plugins/gitsigns')
 
 require('plugins/barbar')
 
+-- File Explorer
+
+require('plugins/nvim-tree')
+
 -- Completions
 
 require('plugins/nvim-cmp')

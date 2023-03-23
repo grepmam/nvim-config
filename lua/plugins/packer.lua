@@ -71,6 +71,12 @@ return require('packer').startup(function(use)
 
     use 'romgrk/barbar.nvim'
 
+    -------------------
+    -- File Explorer
+    -------------------
+
+    use 'nvim-tree/nvim-tree.lua'
+
     ----------------
     -- Autocomplete
     ----------------
