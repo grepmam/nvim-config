@@ -9,7 +9,7 @@ local perltidy_profile = os.getenv("HOME") .. '/.config/nvim/others/.perltidyrc'
 local perlcritic_profile = os.getenv("HOME") .. '/.config/nvim/others/.perlcriticrc'
 
 lsp_config["perlnavigator"].setup{
-    cmd = {'node', '/var/www/educativa/.local/share/nvim/lsp_servers/perlnavigator/node_modules/perlnavigator-server/out/server.js', '--stdio'},
+    cmd = {'node', '<user_path>/.local/share/nvim/lsp_servers/perlnavigator/node_modules/perlnavigator-server/out/server.js', '--stdio'},
     settings = {
       perlnavigator = {
           perlPath = 'perl',
@@ -20,3 +20,7 @@ lsp_config["perlnavigator"].setup{
       }
     }
 }
+
+lsp_config["asm_lsp"].setup{}
+
+lsp_config["pyright"].setup{}
