@@ -11,7 +11,7 @@ options.termguicolors = true           -- Se muestran colores
 
 -- Visuales
 
-options.fileencoding  = 'windows-1252'
+options.fileencoding  = 'utf-8'
 options.showmatch     = true           -- Resaltar paréntesis y corchetes coincidentes
 options.scrolloff     = 10             -- Número mínimo de líneas de pantalla para mantener por encima y por debajo del cursor
 options.sidescroll    = 10             -- 

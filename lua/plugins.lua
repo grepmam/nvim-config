@@ -25,3 +25,15 @@ require('plugins/gitsigns')
 -- Barbar tabs
 
 require('plugins/barbar')
+
+-- Completions
+
+require('plugins/nvim-cmp')
+
+-- LSP
+
+require('plugins/lsp')
+
+-- Diagnostics
+
+require('plugins/trouble')

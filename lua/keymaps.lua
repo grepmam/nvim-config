@@ -103,3 +103,20 @@ nmap('<leader>fw', ':lua require("telescope.builtin").lsp_workspace_symbols( { s
 ------ Gitsigns ------
 
 nmap('<leader>gs', ":Gitsigns toggle_current_line_blame<cr>")
+
+
+------ Diagnostics ------
+
+nmap('<leader>d', ':TroubleToggle<CR>')
+
+
+------ Barbar Tabs ------
+
+-- Move to previous/next 
+
+nmap('<A-,>', ':BufferPrevious<CR>')
+nmap('<A-.>', ':BufferNext<CR>')
+
+-- Close Buffer 
+
+nmap('<A-q>', ':BufferClose<CR>')
