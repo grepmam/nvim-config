@@ -1,4 +1,4 @@
--- Verificar si Packer est· instalado
+-- Verificar si Packer est√° instalado
 
 local functions = vim.fn
 local install_path = functions.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -25,6 +25,12 @@ return require('packer').startup(function(use)
     ------------------
 
     use 'kyazdani42/nvim-web-devicons'
+
+    ------------------
+    -- Tree-sitter
+    ------------------
+
+    use 'nvim-treesitter/nvim-treesitter'
 
     ------------------
     -- Tokyo Theme
@@ -114,6 +120,42 @@ return require('packer').startup(function(use)
     use {
         'folke/trouble.nvim',
         requires = { { 'folke/lsp-colors.nvim' } }
+    }
+
+    ---------------
+    -- Terminal
+    ---------------
+
+    use 'akinsho/toggleterm.nvim'
+
+    ----------
+    -- Illuminate
+    ----------
+
+    use 'RRethy/vim-illuminate'
+
+    --------------
+    -- VirtColumn
+    --------------
+    
+    use 'xiyaowong/virtcolumn.nvim'
+
+    --------------
+    -- Agrolens
+    --------------
+
+    use 'desdic/agrolens.nvim'
+
+    --------------
+    --
+    --------------
+
+    use {
+        'aaronhallaert/advanced-git-search.nvim',
+        requires = {
+            'tpope/vim-fugitive',
+            "tpope/vim-rhubarb"
+        },
     }
 
 end)

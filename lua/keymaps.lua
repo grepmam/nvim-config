@@ -5,9 +5,6 @@ require('utils')
 -------------
 
 map('', '<space>', '<nop>')
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
 
 -------------
 -- Base
@@ -20,7 +17,7 @@ nmap('<leader>e', ':set fileencoding=windows-1252<CR>')
 -- Copy, Paste and Cut line
 
 vmap('<C-c>', '"+ygvy')
-nmap('<C-v>', '"+gP')
+nmap('<C-p>', '"+gP')
 
 vmap('<C-x>', '"+ygvd')
 
@@ -98,11 +95,6 @@ nmap('<leader>sw', ':lua require("telescope.builtin").lsp_workspace_symbols()<cr
 nmap('<leader>fw', ':lua require("telescope.builtin").lsp_workspace_symbols( { symbols = "function" } )<cr>')
 
 
------- Gitsigns ------
-
-nmap('<leader>gs', ":Gitsigns toggle_current_line_blame<cr>")
-
-
 ------ Diagnostics ------
 
 nmap('<leader>d', ':TroubleToggle<CR>')
@@ -123,3 +115,8 @@ nmap('<A-q>', ':BufferClose<CR>')
 ------ File Explorer ------
 
 nmap('<leader>o', ':NvimTreeToggle<CR>')
+
+
+------ Agrolens ------
+
+nmap('<leader>{', ':Telescope agrolens query=functions buffers=all<CR>')

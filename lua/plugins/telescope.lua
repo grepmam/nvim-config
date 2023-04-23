@@ -1,10 +1,17 @@
-require('telescope').setup({
+local telescope = require('telescope')
+
+telescope.load_extension('agrolens')
+telescope.load_extension("advanced_git_search")
+
+telescope.setup({
 
     defaults = {
+        
         -- lua regex indicating what file to ignore
         file_ignore_patterns = {
             "%.git/",
         },
+
         -- Default values except for --hidden
         vimgrep_arguments = {
           'rg',
@@ -16,7 +23,9 @@ require('telescope').setup({
           '--no-binary',
           '--hidden' -- Search also hidden files
         },
-        prompt_prefix="    ",
+
+        prompt_prefix=" >  "
+
     }
 
 })

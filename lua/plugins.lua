@@ -1,7 +1,7 @@
 -- Plugin Manager
 
 require('plugins/packer')
-
+ 
 -- Tokyonight Theme
 
 require('plugins/tokyonight-theme')
@@ -41,3 +41,7 @@ require('plugins/lsp')
 -- Diagnostics
 
 require('plugins/trouble')
+
+-- Toggleterminal
+
+require('plugins/toggleterm')

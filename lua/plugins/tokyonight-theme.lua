@@ -13,5 +13,6 @@ require("tokyonight").setup({
         -- Background styles. Can be "dark", "transparent" or "normal"
         sidebars = "transparent", -- style for sidebars, see below
         floats = "transparent", -- style for floating windows
-    },
+    }
+
 })

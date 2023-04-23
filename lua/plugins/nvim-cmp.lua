@@ -1,3 +1,4 @@
+
 local has_words_before = function()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
   return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
@@ -18,7 +19,7 @@ cmp.setup({
     -- ---------------------------
     -- Mappings
     -- ---------------------------
-
+ 
     mapping = {
 
         ['<c-b>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
@@ -32,7 +33,7 @@ cmp.setup({
         
         -- super tab config
         
-        ["<tab>"] = cmp.mapping(function(fallback)
+        ['<tab>'] = cmp.mapping(function(fallback)
         
             if cmp.visible() then
                 cmp.select_next_item()
@@ -44,9 +45,9 @@ cmp.setup({
                 fallback()
             end
         
-        end, { "i", "s" }),
+        end, { 'i', 's' }),  
 
-        ["<s-tab>"] = cmp.mapping(function(fallback)
+        ['<s-tab>'] = cmp.mapping(function(fallback)
 
             if cmp.visible() then
                 cmp.select_prev_item()
@@ -56,7 +57,7 @@ cmp.setup({
                 fallback()
             end
 
-        end, { "i", "s" }),
+        end, { 'i', 's' }),
     },
 
     -- ---------------------------
@@ -74,4 +75,5 @@ cmp.setup({
 
 })
 
-require('luasnip.loaders.from_vscode').lazy_load()
+local snippets_path = '~/.config/nvim/snippets'
+require("luasnip.loaders.from_vscode").load({ paths = snippets_path })
