@@ -1,7 +1,7 @@
 -- Plugin Manager
 
 require('plugins/packer')
- 
+
 -- Tokyonight Theme
 
 require('plugins/tokyonight-theme')
@@ -9,10 +9,6 @@ require('plugins/tokyonight-theme')
 -- Status Bar
 
 require('plugins/lualine')
-
--- Telescope
-
-require('plugins/telescope')
 
 -- Alpha Dashboard
 
@@ -41,6 +37,10 @@ require('plugins/lsp')
 -- Diagnostics
 
 require('plugins/trouble')
+
+-- Null LS
+
+require('plugins/null-ls')
 
 -- Toggleterminal
 

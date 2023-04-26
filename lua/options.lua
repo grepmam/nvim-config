@@ -27,11 +27,3 @@ options.shiftwidth    = 4              -- El número de espacios insertados para
 options.expandtab     = true           -- Convertir tabs a espacios
 options.smartindent   = true           -- Hacer sangría más inteligente de nuevo
 options.wrap          = false          -- Mostrar líneas como una línea larga
-
-
--- [ Plugins ]
-
--- Indent Blankline
-
-options.list = true
-options.listchars:append "space:⋅"

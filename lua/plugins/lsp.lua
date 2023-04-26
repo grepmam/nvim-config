@@ -1,7 +1,21 @@
 local lsp_installer = require('nvim-lsp-installer')
 local lsp_config = require('lspconfig')
 
-lsp_installer.setup({})
+lsp_installer.setup({
+
+    ui = {
+
+        border = "rounded",
+
+        icons = {
+            server_installed = "",
+            server_pending = "",
+            server_uninstalled = "◍",
+        },
+
+    }
+
+})
 
 local user_home = os.getenv("HOME")
 
@@ -26,7 +40,12 @@ lsp_config["perlnavigator"].setup{
 
 -- Configurar ASM LSP
 
-lsp_config["asm_lsp"].setup{}
+lsp_config["asm_lsp"].setup{
+    cmd = { 'asm-lsp' },
+    root_dir = function(fname)
+        return '/home/rampanic/Escritorio/Aprender/ASM/ejercicios/chapter5'
+    end
+}
 
 -- Configurar Python LSP
 

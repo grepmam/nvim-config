@@ -1,6 +1,3 @@
--- Una línea de estado de Neovim increíblemente 
--- rápida y fácil de configurar escrita en Lua.
-
 require('lualine').setup {
 
     options = { theme = 'tokyonight' },

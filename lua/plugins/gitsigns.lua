@@ -1,5 +1,3 @@
--- Decoraciones git súper rápidas implementadas. Firmas del creador.
-
 local gitsigns = require('gitsigns')
 
 gitsigns.setup({
@@ -57,8 +55,8 @@ gitsigns.setup({
 })
 
 
-local function toggle_blame()
-  gitsigns.toggle_current_line_blame()
-end
-
-vim.defer_fn(toggle_blame, 100)
+--local function toggle_blame()
+--  gitsigns.toggle_current_line_blame()
+--end
+--
+--vim.defer_fn(toggle_blame, 100)

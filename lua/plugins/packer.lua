@@ -21,6 +21,12 @@ return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
 
     ------------------
+    -- Impatient
+    ------------------
+
+    use 'lewis6991/impatient.nvim'
+
+    ------------------
     -- Icons
     ------------------
 
@@ -107,12 +113,6 @@ return require('packer').startup(function(use)
         'williamboman/nvim-lsp-installer'
     }
 
-    ------------
-    -- Snippets
-    ------------
-    
-    use 'rafamadriz/friendly-snippets'
-
     ---------------
     -- Diagnostics
     ---------------
@@ -122,40 +122,22 @@ return require('packer').startup(function(use)
         requires = { { 'folke/lsp-colors.nvim' } }
     }
 
+    ------------
+    -- Null LS
+    ------------
+
+    use 'jose-elias-alvarez/null-ls.nvim'
+
+    ------------
+    -- Snippets
+    ------------
+    
+    use 'rafamadriz/friendly-snippets'
+
     ---------------
     -- Terminal
     ---------------
 
     use 'akinsho/toggleterm.nvim'
-
-    ----------
-    -- Illuminate
-    ----------
-
-    use 'RRethy/vim-illuminate'
-
-    --------------
-    -- VirtColumn
-    --------------
-    
-    use 'xiyaowong/virtcolumn.nvim'
-
-    --------------
-    -- Agrolens
-    --------------
-
-    use 'desdic/agrolens.nvim'
-
-    --------------
-    --
-    --------------
-
-    use {
-        'aaronhallaert/advanced-git-search.nvim',
-        requires = {
-            'tpope/vim-fugitive',
-            "tpope/vim-rhubarb"
-        },
-    }
 
 end)

@@ -1,14 +1,3 @@
--- barbar.nvim es un complemento de tabline con pestañas reordenables, de tamaño automático, 
--- en las que se puede hacer clic, íconos, resaltado agradable, comandos de clasificación y 
--- un modo mágico de salto al búfer. Además, los nombres de las pestañas se vuelven únicos 
--- cuando dos nombres de archivo coinciden. 
---
--- En el modo de salto al búfer, las pestañas muestran una letra objetivo en lugar de su icono.
--- Salta a cualquier búfer simplemente escribiendo su letra de destino. Aún mejor, la letra de 
--- destino permanece constante durante la vida útil del búfer, por lo que si está trabajando 
--- con un conjunto de archivos, puede incluso escribir la letra de la memoria.
-
-
 require('barbar').setup({
 
     -- Enable/disable animations

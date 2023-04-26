@@ -1,15 +1,13 @@
-local globals = vim.g
+-- Leader
 
--- Keymaps
-
-globals.mapleader = ' '
-globals.maplocalleader = ' '
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
 
 -- Barbar
 
-globals.barbar_auto_setup = false
+vim.g.barbar_auto_setup = false
 
 -- Line separator
 
-globals.virtcolumn_char = '▕'
-globals.virtcolumn_priority = 10
+vim.g.virtcolumn_char = '▕'
+vim.g.virtcolumn_priority = 10

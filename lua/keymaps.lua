@@ -1,9 +1,5 @@
 require('utils')
 
--------------
--- Leader
--------------
-
 map('', '<space>', '<nop>')
 
 -------------
@@ -115,8 +111,3 @@ nmap('<A-q>', ':BufferClose<CR>')
 ------ File Explorer ------
 
 nmap('<leader>o', ':NvimTreeToggle<CR>')
-
-
------- Agrolens ------
-
-nmap('<leader>{', ':Telescope agrolens query=functions buffers=all<CR>')
